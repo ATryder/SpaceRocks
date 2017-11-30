@@ -7,5 +7,6 @@
 /build
 /captures
 .externalNativeBuild
-**/*.blend*
-!**/*.blend
+**/*.blend1
+**/*.blend2
+**/*.blend3
