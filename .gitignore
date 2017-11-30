@@ -8,4 +8,4 @@
 /captures
 .externalNativeBuild
 **/*.blend*
-!/blends/*.blend
+!**/*.blend
