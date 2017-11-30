@@ -1,0 +1,23 @@
+MaterialDef crystal {
+    MaterialParameters {
+        Texture2D Texture -LINEAR
+        Color Color (Color)
+        Float Glow : 0.8
+        Float ColMult : 0.8
+        Float GlowMult : 0.8
+    }
+    Technique {
+        
+        LightMode MultiPass
+        
+        VertexShader GLSL100: Shaders/Shared/norm_lowp.vert
+        FragmentShader GLSL100: Shaders/crystal.frag
+        
+        WorldParameters {
+            WorldViewProjectionMatrix
+            WorldViewMatrix
+            ViewMatrix
+            NormalMatrix
+        }
+    }
+}

@@ -1,0 +1,25 @@
+MaterialDef SR2 {
+    MaterialParameters {
+        Texture2D DiffuseMap
+        Texture2D NormalMap -LINEAR
+        Texture2D SpecCol
+        Color CanopyColor (Color)
+        Float Shininess : 8.0
+        Float WardShininess : 3000.0
+        Float WardFallOff : 2.3
+    }
+    Technique {
+        
+        LightMode MultiPass
+        
+        VertexShader GLSL100: Shaders/Specular/NormLowPrec.vert
+        FragmentShader GLSL100: Shaders/Specular/sr_lowp.frag
+        
+        WorldParameters {
+            WorldViewProjectionMatrix
+            WorldViewMatrix
+            ViewMatrix
+            NormalMatrix
+        }
+    }
+}

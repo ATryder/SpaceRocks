@@ -1,0 +1,31 @@
+MaterialDef circle_glow {
+    MaterialParameters {
+        Float Radius : 0.5
+        Float X : 0.0
+        Float Y : 0.0
+        Color Color (Color)
+        Color Color2 (Color)
+        Color Color3 (Color)
+        Float Pos1 : 0.0
+        Float Pos2 : 0.5
+        Float Alpha : 1.0
+        Boolean useVertCol : False
+    }
+    Technique {
+        VertexShader GLSL100: Shaders/Shared/basic_vertCol.vert
+        FragmentShader GLSL100: Shaders/Unshaded/circle_glow.frag
+        
+        WorldParameters {
+            WorldViewProjectionMatrix
+        }
+        
+        RenderState {
+            Blend AlphaAdditive
+            DepthWrite Off
+        }
+        
+        Defines {
+            VERTCOL : useVertCol
+        }
+    }
+}

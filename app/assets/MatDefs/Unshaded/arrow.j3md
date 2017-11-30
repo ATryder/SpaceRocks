@@ -1,0 +1,24 @@
+MaterialDef arrow {
+    MaterialParameters {
+        Float Percent : 1.0
+        Boolean useAA : False
+        Boolean useVertCol : True
+    }
+    Technique {
+        VertexShader GLSL100: Shaders/Shared/basic_vertCol.vert
+        FragmentShader GLSL100: Shaders/Unshaded/arrow.frag
+        
+        WorldParameters {
+            WorldViewProjectionMatrix
+        }
+        
+        RenderState {
+            Blend Alpha
+        }
+        
+        Defines {
+            USEAA : useAA
+            VERTCOL : useVertCol
+        }
+    }
+}

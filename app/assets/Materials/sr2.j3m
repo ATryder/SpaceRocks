@@ -1,0 +1,13 @@
+Material SR2 : MatDefs/Specular/sr.j3md {
+     MaterialParameters {
+        DiffuseMap : Flip Textures/SR2/SR2_Diff.png
+        NormalMap : Flip Textures/SR2/SR2_Norm.png
+        CanopyColor : 0.19215687 0.40392157 1.0 1.0
+        Shininess : 8.0
+        WardShininess : 450.0
+        WardFallOff : 0.005
+        SpecCol : Flip Textures/SR2/SR2_SpecCol.png
+     }
+    AdditionalRenderState {
+    }
+}

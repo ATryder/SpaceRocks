@@ -1,0 +1,24 @@
+MaterialDef circle_distance {
+    MaterialParameters {
+        Color Color (Color)
+        Float minDist
+        Float Focus
+        Float maxOffset
+        Float minOffset
+    }
+    Technique {
+        VertexShader GLSL100: Shaders/Shared/circle_distance.vert
+        FragmentShader GLSL100: Shaders/Unshaded/circle_distance.frag
+        
+        WorldParameters {
+            WorldViewProjectionMatrix
+            CameraPosition
+            WorldMatrix
+        }
+        
+        RenderState {
+            Blend AlphaAdditive
+            DepthWrite Off
+        }
+    }
+}

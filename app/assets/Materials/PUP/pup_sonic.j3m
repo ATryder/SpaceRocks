@@ -1,0 +1,7 @@
+Material PUP Sonic : MatDefs/rimColor.j3md {
+     MaterialParameters {
+        Color : 0 0.25 0.8 1.0
+     }
+    AdditionalRenderState {
+    }
+}

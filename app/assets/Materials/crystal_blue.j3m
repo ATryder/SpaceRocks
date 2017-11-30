@@ -1,0 +1,11 @@
+Material Blue Crystal : MatDefs/crystal.j3md {
+     MaterialParameters {
+        Texture : Flip Textures/Crystal/Crystal.png
+        Color : 0.0 0.4 0.8 1.0
+        Glow : 0.8
+        ColMult : 0.5
+        GlowMult : 0.5
+     }
+    AdditionalRenderState {
+    }
+}

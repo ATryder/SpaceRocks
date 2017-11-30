@@ -1,0 +1,19 @@
+MaterialDef vertCol {
+    MaterialParameters {
+        Boolean useAA : False
+        Boolean useVertCol : True
+    }
+    Technique {
+        VertexShader GLSL100: Shaders/Shared/basic_vertCol.vert
+        FragmentShader GLSL100: Shaders/Unshaded/trail.frag
+        
+        WorldParameters {
+            WorldViewProjectionMatrix
+        }
+        
+        Defines {
+            USEAA : useAA
+            VERTCOL : useVertCol
+        }
+    }
+}

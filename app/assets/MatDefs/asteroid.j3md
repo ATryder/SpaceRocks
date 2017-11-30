@@ -1,0 +1,20 @@
+MaterialDef SR2 {
+    MaterialParameters {
+        Texture2D DiffuseMap
+        Texture2D NormalMap -LINEAR
+    }
+    Technique {
+        
+        LightMode MultiPass
+        
+        VertexShader GLSL100: Shaders/Shared/norm_lowp.vert
+        FragmentShader GLSL100: Shaders/diffuse_norm.frag
+        
+        WorldParameters {
+            WorldViewProjectionMatrix
+            WorldViewMatrix
+            ViewMatrix
+            NormalMatrix
+        }
+    }
+}

@@ -1,0 +1,3 @@
+Space Rocks is a 3D asteroids inspired game for Android devices. Fly through infinite space destroying asteroids and collecting power-ups to repair damage to your craft, power your guns and stock up on powerful sonic bombs! Watch out for black holes that will accelerate nearby asteroids to high speeds, but stick around for black holes will release any power-ups they've collected when they dissipate.
+
+You can find various APK installers for Space Rocks at http://1337atr.weebly.com/spacerocksmobile.html

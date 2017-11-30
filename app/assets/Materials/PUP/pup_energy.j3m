@@ -1,0 +1,7 @@
+Material PUP Energy : MatDefs/rimColor.j3md {
+     MaterialParameters {
+        Color : 0.4 0 1 1.0
+     }
+    AdditionalRenderState {
+    }
+}

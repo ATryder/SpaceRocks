@@ -1,0 +1,17 @@
+Material MyMaterial : Common/MatDefs/Misc/Unshaded.j3md {
+    MaterialParameters {
+        BackfaceShadows : true
+        Color : 0.2 0.2 0.2 1.0
+    }
+    AdditionalRenderState {
+        PointSprite On
+        FaceCull Off
+        AlphaTestFalloff 0.0
+        DepthWrite On
+        ColorWrite On
+        PolyOffset 0.0 0.0
+        DepthTest On
+        Blend Off
+        Wireframe Off
+    }
+}

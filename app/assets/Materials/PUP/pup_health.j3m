@@ -1,0 +1,7 @@
+Material PUP Health : MatDefs/rimColor.j3md {
+     MaterialParameters {
+        Color : 1 0.0 0.0 1.0
+     }
+    AdditionalRenderState {
+    }
+}

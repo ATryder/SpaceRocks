@@ -1,0 +1,8 @@
+Material Asteroid : MatDefs/asteroid.j3md {
+     MaterialParameters {
+        DiffuseMap : Flip Textures/Asteroid/Asteroid_Diff.png
+        NormalMap : Flip Textures/Asteroid/Asteroid_Norm.png
+     }
+    AdditionalRenderState {
+    }
+}

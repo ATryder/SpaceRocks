@@ -1,0 +1,19 @@
+MaterialDef rimColor {
+    MaterialParameters {
+        Color Color (Color)
+    }
+    Technique {
+        
+        LightMode MultiPass
+        
+        VertexShader GLSL100: Shaders/Shared/vertNorm.vert
+        FragmentShader GLSL100: Shaders/rim.frag
+        
+        WorldParameters {
+            WorldViewProjectionMatrix
+            WorldViewMatrix
+            ViewMatrix
+            NormalMatrix
+        }
+    }
+}
